@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa Taslak</title>
+    <link rel="stylesheet" href="style.css" asp-append-version="true" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-menu">
+        <img src="logo.jpg" alt="Logo" class="logo">
+        <nav class="nav-links">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Anasayfa</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Nasil">Nasıl Çalışır</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Iletisim">İletişim</a>
+            <a id="link-register" class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Register1">Üye Ol</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Giris">Giriş Yap</a>
+        </nav>
+        <img src="drop-down.png" alt="Drop-down" class="dropdown-icon">
+    </div>
+
+    <div class="marine-section">
+        <!-- İçeriğiniz buraya gelecek -->
+    </div>
+
+    <div class="divider"></div>
+
+    <a asp-action="Register1" asp-controller="Login" class="register-button">Üye Ol</a>
+
+    <!-- Yeni div -->
+    <div class="green-section">
+        <div class="flex-container">
+            <div class="small-box">7/24 Al-Sat yapın!</div>
+            <div class="small-box">Avantajlı oranlarla dönüşüm</div>
+            <div class="small-box">Paranızı çekerken komisyon ödemeyin!</div>
+            <div class="small-box">Para yatırırken komisyon yok!</div>
+            <div class="small-box">Direkt alım ile beklemek zorunda değilsiniz</div>
+            <div class="small-box">Emir verip uygun fiyatı bekleme seçeneği</div>
+
+        </div>
+    </div>
+	
+	<div class="image-slider">
+        <img src="gen1111.png" alt="Genel Görsel 1" class="slider-image">
+        <img src="gen22.png" alt="Genel Görsel 2" class="slider-image">
+    </div>
+	
+
+    <script>
+        const dropdownIcon = document.querySelector('.dropdown-icon');
+        const topMenu = document.querySelector('.top-menu');
+        const contentArea = document.querySelector('.content-area');
+
+
+        dropdownIcon.addEventListener('click', function() {
+            topMenu.classList.toggle('expanded');
+            if (topMenu.classList.contains('expanded')) {
+                contentArea.style.top = '220px';
+            } else {
+                contentArea.style.top = '80px';
+            }
+        });
+ 
+
+        // JavaScript for image slider
+        const sliderImages = document.querySelectorAll('.slider-image');
+        let currentIndex = 0;
+
+        function showNextImage() {
+            sliderImages[currentIndex].style.opacity = 0; // Geçerli resmi gizle
+            currentIndex = (currentIndex + 1) % sliderImages.length; // Sonraki resme geç
+            sliderImages[currentIndex].style.opacity = 1; // Yeni resmi göster
+        }
+
+        setInterval(showNextImage, 5000); // Her 5 saniyede bir resmi değiştir
+    </script>
+
+</body>
+</html>
