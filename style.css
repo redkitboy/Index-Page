@@ -74,9 +74,7 @@ body {
     position: absolute;
     bottom: 20px;
     left: 20%;
-	
     /*transform: translateX(-50%);*/
-    /*background-color: rgba(0, 0, 128, 0.7);*/ /* Lacivert, yarı saydam */
     color: #000080;
     padding: 10px 20px;
     border-radius: 10px;
@@ -185,6 +183,32 @@ body {
 	font-weight: 600;
 }
 
+.artimage{
+	width: 425px;
+	height: 310px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+.footer{
+	position:relative;
+	/*margin-top:0px;*/
+	display: block;
+	width: 100%;
+	height: 40px;
+	color: grey;
+	background-color: #111111;
+}
+
+.foottext{
+	position:absolute;
+	left:50%;
+	top:5px;
+	transform:translateX(-50%);
+	background-color:transparent;
+}
+
 .register-button {
     position: fixed;
     top: 160px; /* content-area ile aynı hizada */
@@ -199,10 +223,18 @@ body {
     z-index: 999;
 }
 
-.artimage{
-	width: 425px;
-	height: 310px;
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
+.login-button {
+    position: fixed;
+    top: 160px; /* content-area ile aynı hizada */
+    left: calc(50% + 20% + 105px); /* content-area bitişinden 5px sağa */
+    background-color: #002D80; /* Açık mavi */
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    z-index: 999;
 }
+
+
