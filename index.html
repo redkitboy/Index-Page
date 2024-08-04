@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anasayfa Taslak</title>
     <link rel="stylesheet" href="style.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="top-menu">
@@ -23,15 +26,16 @@
     </div>
 
     <div class="image-slider">
-        <img src="gen1111.png" alt="Genel Görsel 1" class="slider-image">
-        <img src="gen22.png" alt="Genel Görsel 2" class="slider-image">
+        <img src="gen222.png" alt="Genel Görsel 2" class="slider-image">
+        <div class="slogan">
+            damgaForex<br> masanızdaki döviz bürosu
+        </div>
     </div>
 
     <div class="divider"></div>
 
     <a asp-action="Register1" asp-controller="Login" class="register-button">Üye Ol</a>
 
-    <!-- Yeni div -->
     <div class="green-section">
         <div class="flex-container">
             <div class="small-box">7/24 Al-Sat yapın!</div>
@@ -40,20 +44,17 @@
             <div class="small-box">Para yatırırken komisyon yok!</div>
             <div class="small-box">Direkt alım ile beklemek zorunda değilsiniz</div>
             <div class="small-box">Emir verip uygun fiyatı bekleme seçeneği</div>
-
         </div>
     </div>
-	
-	
-	<div class="marine-section">
-        <!-- İçeriğiniz buraya gelecek -->
+    
+    <div class="marine-section">
+        <img class="artimage" src="artistic2.png">
     </div>
 
     <script>
         const dropdownIcon = document.querySelector('.dropdown-icon');
         const topMenu = document.querySelector('.top-menu');
         const contentArea = document.querySelector('.content-area');
-
 
         dropdownIcon.addEventListener('click', function() {
             topMenu.classList.toggle('expanded');
@@ -63,7 +64,6 @@
                 contentArea.style.top = '80px';
             }
         });
- 
 
         // JavaScript for image slider
         const sliderImages = document.querySelectorAll('.slider-image');
