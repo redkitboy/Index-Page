@@ -151,6 +151,38 @@ body {
     background-color: #3C8C63; /* #7fffd4;*/
     margin-top: 0px; /* Top margin ayarı */
 	position:relative;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif; /* Google Fonts'tan Josefin Sans'ı eklemeyi unutmayın */
+
+}
+
+.m-container{
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	width: calc(80% - 430px);
+}
+
+.m-baslik {
+    display: block;
+    /*top: 20%;
+    left: 20%;*/
+	font-size: 3em;
+	font-weight: 600;
+	font-family: 'Josefin Sans', sans-serif; /* Google Fonts'tan Josefin Sans'ı eklemeyi unutmayın */
+
+}
+
+.m-icerik {
+    /*position: absolute;*/
+	display: block;
+	padding-top:30px;
+    /*top: calc(20% + 60px);*/
+    /*left: 20%;*/
+	/*width: calc(80% - 430px);*/
+    font-family: 'Josefin Sans', sans-serif; /* Google Fonts'tan Josefin Sans'ı eklemeyi unutmayın */
+	font-size: 2em;
+	font-weight: 600;
 }
 
 .register-button {
